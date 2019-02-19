@@ -1,9 +1,9 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import cookieParser from 'cookie-parser';
-import compress from 'compression';
-import cors from 'cors';
-import helmet from 'helmet';
+const express = require('express');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const compress = require('compression');
+const cors = require('cors');
+const helmet = require('helmet');
 
 const app = express();
 
@@ -15,4 +15,4 @@ app.use(compress());
 app.use(helmet());
 app.use(cors());
 
-export default app;
+module.exports = app;
