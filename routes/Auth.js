@@ -26,4 +26,15 @@ module.exports = app => {
       throw err;
     }
   });
+
+  app.get('/api/users', async (req, res) => {
+    const users = await User.find();
+    const result = users.map(user => {
+      return {
+        ...user._doc,
+        password: null
+      };
+    });
+    res.send(result);
+  });
 };
