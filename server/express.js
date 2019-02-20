@@ -15,4 +15,7 @@ app.use(compress());
 app.use(helmet());
 app.use(cors());
 
+// Routes
+require('../routes/Auth')(app);
+
 module.exports = app;

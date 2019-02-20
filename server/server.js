@@ -1,5 +1,6 @@
+const mongoose = require('mongoose');
+
 const app = require('./express');
-const mongoose = require('./mongoose');
 
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
   var isDevMode = true;
