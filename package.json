@@ -6,7 +6,7 @@
   "author": "Raul <raulch1998@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon"
+    "server": "nodemon server/server.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
